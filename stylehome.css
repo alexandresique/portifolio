@@ -33,17 +33,6 @@
     white-space: nowrap;
     overflow: hidden;
 }
-.mobiletext{
-    position: relative;
-    width: 0px;
-    margin: auto;
-    border-right: 2px solid rgba(255, 255, 255, 0.75);
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    font-size: 25px;
-}
-
 .mobile{
     text-align: center;
 }
