@@ -6,7 +6,7 @@ body{
 
     padding: 0%;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: black;
+    background-color: rgb(05, 10, 10);
     color: white;
     height: 200vh;
 }
@@ -79,7 +79,7 @@ header{
         height: 100vh;
         background-color: #2e2e2e;
         top: 110px;
-        left: -100%;
+        right: -100%;
         text-align: center;
         transition: all .5s;
         border-top: solid grey 2px;
@@ -94,7 +94,7 @@ header{
         font-size: 20px;
     }
     #check:checked ~ .navbar{
-        left: 0;
+        right: 0;
     }
     
 }
@@ -113,12 +113,13 @@ header{
     max-width: 400px;
     opacity: 0.5;
     border-right: 2px solid red;
+    border-left: 2px solid red;
     border-radius: 100%;
-    box-shadow: 2px 2px 2px rgb(253, 252, 252);
     cursor: pointer;
 }
 .apresentacao img:hover{
     border-right: 2px solid #14d424;
+    border-left: 2px solid #14d424;
     transition: 1s;
     opacity: 1;
 }
@@ -135,7 +136,10 @@ header{
     }
     .apresentacao img{
         opacity: initial;
-        width: 300px;
+        width: 250px;
+        border-right: 2px solid #14d424;
+        border-left: 2px solid #14d424;
+
     }
 }
 @media (min-width: 858px){
