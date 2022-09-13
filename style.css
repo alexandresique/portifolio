@@ -126,6 +126,32 @@ header{
 .apresentacao h1{
     text-shadow: 2px 2px 2px grey;
 }
+/* Animação typewriter */
+.typewriter{
+    overflow: hidden;
+    border-right: 2px solid white;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
+    height: 35px;
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 80%;
+    }
+}
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent
+    }
+    50% {
+        border-color: white
+    }
+}
+/* termina aqui a animação typewriter do titulo */
 @media (max-width: 858px){
     .apresentacao{
         display: block;
@@ -155,6 +181,7 @@ header{
     background-color: #2e2e2e;
     padding: 20px; 
     line-height: 25px; 
+    margin: 0%;
 }
 .descricao h1{
     color: #14d424;
@@ -169,28 +196,65 @@ header{
     }
 }
 
-/* Animação typewriter */
-.typewriter{
-    overflow: hidden;
-    border-right: 2px solid white;
-    white-space: nowrap;
-    margin: 0 auto;
-    animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
-    height: 35px;
+/* estilos dos conteiner projetos */
+.secaoprojetos{
+    margin-top: 0;
+    background-image: linear-gradient(to top, rgb(05, 10, 10), #2e2e2e );
+    padding: 20px;
+} 
+.secaoprojetos h1{
+    color: #14d424;
+    text-align: center;
+    margin: 0%;
 }
-@keyframes typing {
-    from {
-        width: 0;
+.projetos{
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding: 20px;
+    margin: auto;
+}
+.content{
+    background-color: #2e2e2e;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px grey;
+    max-width: 250px;
+}
+.content a{
+    border: 2px solid #14d424;
+    color: #14d424;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.content a:hover{
+    background-color: #14d424;
+    color: white;
+    
+}
+@media (max-width: 858px){
+    .secaoprojetos{
+        max-width: 400px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
-    to {
-        width: 80%;
+    .projetos{
+        display: block;
+    }
+    .content{
+        max-width: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 }
-@keyframes blink-caret {
-    from, to {
-        border-color: transparent
-    }
-    50% {
-        border-color: white
-    }
-}
+
