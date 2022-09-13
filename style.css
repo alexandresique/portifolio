@@ -6,9 +6,11 @@ body{
 
     padding: 0%;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(05, 10, 10);
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     color: white;
-    height: 200vh;
 }
 
 
@@ -107,24 +109,18 @@ header{
     display: flex;
     justify-items: center;
     justify-content: center;
-    margin: 20px;
+    margin: 10px;
+    padding: 20px;
 }
 .apresentacao img{
     max-width: 400px;
-    opacity: 0.5;
-    border-right: 2px solid red;
-    border-left: 2px solid red;
+    border-right: 2px solid #14d424;
+    border-left: 2px solid #14d424;
     border-radius: 100%;
     cursor: pointer;
 }
-.apresentacao img:hover{
-    border-right: 2px solid #14d424;
-    border-left: 2px solid #14d424;
-    transition: 1s;
-    opacity: 1;
-}
 .apresentacao h1{
-    text-shadow: 2px 2px 2px grey;
+    text-shadow: 2px 2px 2px rgb(3, 3, 3);
 }
 /* Animação typewriter */
 .typewriter{
@@ -186,13 +182,33 @@ header{
 .descricao h1{
     color: #14d424;
 }
+.links{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin: auto;
+}
+.links a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.links img{
+    max-width: 100px;
+    margin: 40px;
+    border-radius: 5px;
+    border: 2px solid #14d424;
+    padding: 5px;
+}
 @media (max-width: 858px){
     .descricao{
         max-width: 400px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto; 
-    text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto; 
+        text-align: center;
+    }
+    .links img{
+        margin: 10px;
     }
 }
 
