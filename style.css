@@ -208,7 +208,8 @@ header{
         text-align: center;
     }
     .links img{
-        margin: 10px;
+        margin: 5px;
+        max-width: 80px;
     }
 }
 
