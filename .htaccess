@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+ExpiresActive on
+ExpiresByType text/css "modification plus 1 day"
+ExpiresByType text/html "modification plus 1 day"
+ExpiresDefault "access 2 days"
+</IfModule>
