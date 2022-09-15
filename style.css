@@ -26,6 +26,11 @@ header{
     line-height: 80px;
     margin-left: 20px;
 }
+.fechanav{
+    background-color: #14d424;
+    padding: 5px;
+    border-radius: 100%;
+}
 .navbar{
     list-style: none;
     float: right;
@@ -42,6 +47,8 @@ header{
     cursor: pointer;
     font-weight: bold;
     font-size: 15px;
+    text-decoration: none;
+    color: whitesmoke;
 }
 .navbar li a:hover{
     text-decoration: underline;
@@ -163,6 +170,9 @@ header{
         border-left: 2px solid #14d424;
 
     }
+    .typewriter{
+        font-size: 18px;
+    }
 }
 @media (min-width: 858px){
     .apresentacao h1{
@@ -187,6 +197,9 @@ header{
     justify-content: center;
     justify-items: center;
     margin: auto;
+}
+.links img:hover{
+    opacity: .5;
 }
 .links a{
     text-decoration: none;
@@ -242,18 +255,16 @@ header{
     max-width: 250px;
 }
 .content a{
-    border: 2px solid #14d424;
-    color: #14d424;
+    background-color: #14d424;
+    box-shadow: 0 0 10px #14d424;
+    color: whitesmoke;
     padding: 5px;
     border-radius: 5px;
     text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
+    text-shadow: 1px 1px 1px grey;
 }
 .content a:hover{
-    background-color: #14d424;
-    color: white;
-    
+    opacity: .5;    
 }
 @media (max-width: 858px){
     .secaoprojetos{
@@ -304,11 +315,28 @@ header{
 }
 /* estilos do formulario de contato do rodapé */
 .form{
-    padding: 10px;
+    /* padding: 10px; */
 }
 .form h3{
     color: #14d424;
     margin-top: 0px;
+}
+.form fieldset{
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    border-top: #2e2e2e solid 2px;
+    padding: 0px;
+    margin: 0px;
+}
+.form a img{
+    width: 40px;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-bottom: 10px;
+}
+.form a img:hover{
+    opacity: .5;
 }
 .form p{
     color: #14d424;
@@ -323,6 +351,7 @@ header{
     color: whitesmoke;
     border: none;
     height: 20px;
+    padding: 5px;
 }
 .form textarea{
     background-color: #2e2e2e;
@@ -330,17 +359,20 @@ header{
     border-radius: 5px;
     color: whitesmoke;
     border: none;
+    padding: 5px;
 }
 .submit{
     background-color: #14d424;
     color: whitesmoke;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: solid 2px grey;
+    box-shadow: 0 0 10px #14d424;
     border-radius: 2px;
     cursor: pointer;
-    
+    border: none;
+    margin-top: 5px;
+    width: 100px;
+    padding: 5px 10px;
+    font-size: 15px;
+    text-shadow: 1px 1px 1px grey;
 }
 .submit:hover{
     opacity: .5;
