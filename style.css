@@ -75,6 +75,9 @@ header{
     .icone-hamburgue{
         display: none;
     }
+    .fechanav{
+        display: nome;
+    }
 }
 @media (max-width: 858px){
     .logo{
