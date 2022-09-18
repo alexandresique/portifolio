@@ -11,8 +11,13 @@
     <meta name="author" content="Alexandre Silveira Siqueira - (91)982020578">
 
     <title>Alexandre Siqueira - Portifólio</title>
-
+    <!-- script carrocel -->
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.5.3/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.5.3/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+    <!-- arquivos de estilos externos -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleslider.css">
+    <!-- imagem favicon -->
     <link rel="shortcut icon" href="favicon.png" type="image/png">
 </head>
 
@@ -25,11 +30,11 @@
 
         </label>
 
-        <a href="#"><img src="logo.png" alt="logo" class="logo"></a>
+        <a href="index.html"><img src="logo.png" alt="logo" class="logo"></a>
         <nav class="navbar">
             <li><a class="destaknavbar" href="index.html">Inicio</a></li>
             <li><a >Curriculo</a></li>
-            <li><a href="#contato">Contato</a></li>
+            <li><a href="index.html#contato">Contato</a></li>
             <label for="check" class="fechanav">X</label>
         </nav>
     </header>
@@ -43,7 +48,7 @@
         </h1>
         <p>
             Sou desenvolvedor Full Stack com dedicação aos estudos, trabalho
-            com HTML, CCS, JAVASCRIPT e PHP desde 2020, participei e desenvolvir 
+            com HTML, CSS, JAVASCRIPT e PHP desde 2020, participei e desenvolvir 
             vários projetos para experiência pessoal e 
             freelance. Sempre procurando as melhores maneiras de solucionar os problemas, mantendo boas práticas como Clean Code.
             Estou cursando o 5º semestre de Análise e Desenvolvimento de Sistemas na Uniasselvi.
@@ -58,28 +63,128 @@
     <section class="secaoprojetos">
         <h1>Projetos</h1>
         <br>
-        <div class="projetos">
-            <div class="content">
-                <h2>Em breve</h1>
-                <p>descrição descrição descrição descrição descrição descrição </p>
-                <a href="#" target="_blank">Ver →</a>
-            </div>
-            <div class="content">
-                <h2>Em breve</h1>
-                <p>descrição descrição descrição descrição descrição descrição </p>
-                <a href="#" target="_blank">Ver →</a>
-            </div>
-            <div class="content">
-                <h2>Em breve</h1>
-                <p>descrição descrição descrição descrição descrição descrição </p>
-                <a href="#" target="_blank">Ver →</a>
-            </div>
-            <div class="content">
-                <h2>Em breve</h1>
-                <p>descrição descrição descrição descrição descrição descrição </p>
-                <a href="#" target="_blank">Ver →</a>
-            </div>
+        <div class="swiffy-slider slider-item-ratio slider-item-ratio-2x1 slider-nav-autoplay  slider-indicators-highlight slider-nav-animation  slider-nav-animation-slow">
+            <ul class="slider-container">
+                <li class="">
+                    <div id="slide1">
+                        <div class="content">
+                            <h2>Em breve</h1>
+                            <p>descrição descrição descrição descrição descrição descrição </p>
+                            <a href="#" target="_blank">Ver →</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="slide-visible">
+                    <div id="slide2">
+                        <div class="content">
+                            <h2>Em breve</h1>
+                            <p>descrição descrição descrição descrição descrição descrição </p>
+                            <a href="#" target="_blank">Ver →</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="">
+                    <div id="slide3">
+                        <div class="content">
+                            <h2>Em breve</h1>
+                            <p>descrição descrição descrição descrição descrição descrição </p>
+                            <a href="#" target="_blank">Ver →</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="">
+                    <div id="slide4">
+                        <div class="content">
+                            <h2>Em breve</h1>
+                            <p>descrição descrição descrição descrição descrição descrição </p>
+                            <a href="#" target="_blank">Ver →</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="">
+                    <div id="slide5">
+                        <div class="content">
+                            <h2>Em breve</h1>
+                            <p>descrição descrição descrição descrição descrição descrição </p>
+                            <a href="#" target="_blank">Ver →</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="">
+                    <div id="slide6">
+                        <div class="content">
+                            <h2>Em breve</h1>
+                            <p>descrição descrição descrição descrição descrição descrição </p>
+                            <a href="#" target="_blank">Ver →</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="">
+                    <div id="slide7">
+                        <div class="content">
+                            <h2>Em breve</h1>
+                            <p>descrição descrição descrição descrição descrição descrição </p>
+                            <a href="#" target="_blank">Ver →</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="">
+                    <div id="slide8">
+                        <div class="content">
+                            <h2>Em breve</h1>
+                            <p>descrição descrição descrição descrição descrição descrição </p>
+                            <a href="#" target="_blank">Ver →</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="">
+                    <div id="slide9">
+                        <div class="content">
+                            <h2>Em breve</h1>
+                            <p>descrição descrição descrição descrição descrição descrição </p>
+                            <a href="#" target="_blank">Ver →</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        
+            <button type="button" class="slider-nav"></button>
+            <button type="button" class="slider-nav slider-nav-next"></button>
+        
+            <ul class="slider-indicators">
+                <li class=""></li>
+                <li class="active"></li>
+                <li class=""></li>
+                <li class=""></li>
+                <li class=""></li>
+                <li class=""></li>
+                <li class=""></li>
+                <li class=""></li>
+                <li class=""></li>
+            </ul>
         </div>
+        <!-- <div class="projetos">
+            <div class="content">
+                <h2>Em breve</h1>
+                <p>descrição descrição descrição descrição descrição descrição </p>
+                <a href="#" target="_blank">Ver →</a>
+            </div>
+            <div class="content">
+                <h2>Em breve</h1>
+                <p>descrição descrição descrição descrição descrição descrição </p>
+                <a href="#" target="_blank">Ver →</a>
+            </div>
+            <div class="content">
+                <h2>Em breve</h1>
+                <p>descrição descrição descrição descrição descrição descrição </p>
+                <a href="#" target="_blank">Ver →</a>
+            </div>
+            <div class="content">
+                <h2>Em breve</h1>
+                <p>descrição descrição descrição descrição descrição descrição </p>
+                <a href="#" target="_blank">Ver →</a>
+            </div>
+        </div> -->
         <br>
     </section>
     <footer class="footer">
@@ -97,7 +202,7 @@
                     <input type="text" class="assunto">
                     <br>
                     <p>Menssagem</p>
-                    <textarea name="" id="" cols="30" rows="5"></textarea>
+                    <textarea name="menssagem" cols="30" rows="5"></textarea>
                     <br>
                     <button type="submit" class="submit">Enviar</button>
                 </fieldset>              
