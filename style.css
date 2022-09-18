@@ -8,8 +8,8 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-image: url(bg.jpg);
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
+    background-position: center;
     background-attachment: fixed;
     color: whitesmoke;
 }
@@ -28,9 +28,9 @@ header{
     margin-left: 20px;
 }
 .fechanav{
-    background-color: #14d424;
-    padding: 5px;
-    border-radius: 100%;
+    color: #14d424;
+    font-weight: bold;
+    font-size: 18px;
 }
 .navbar{
     list-style: none;
@@ -76,7 +76,7 @@ header{
         display: none;
     }
     .fechanav{
-        display: nome;
+        display: none;
     }
 }
 @media (max-width: 858px){
@@ -192,6 +192,7 @@ header{
     padding: 20px; 
     line-height: 25px; 
     margin: 0%;
+    text-align: center;
 }
 .descricao h1{
     color: #14d424;
@@ -229,6 +230,13 @@ header{
         max-width: 80px;
     }
 }
+@media (min-width: 858px){
+    .descricao{
+        padding-left: 200px;
+        padding-right: 200px;
+
+    }
+}
 
 /* estilos dos conteiner projetos */
 .secaoprojetos{
@@ -243,11 +251,9 @@ header{
 }
 .projetos{
     max-width: 1000px;
-    display: flex;
-    justify-content: space-around;
-    justify-items: center;
+    height: 500px;
     /* padding: 20px;
-    margin: auto; */
+    margin: auto; */ 
 }
 .content{
     background-color: #2e2e2e;
@@ -255,8 +261,9 @@ header{
     margin: 20px;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 0px 2px 10px grey;
-    max-width: 250px;
+    box-shadow: 0px 2px 5px grey;
+    max-width: 100%;
+    height: 90%;
 }
 .content a{
     background-color: #14d424;
@@ -281,12 +288,8 @@ header{
         display: block;
     }
     .content{
-        max-width: 200px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 40px;
-        margin-bottom: 40px;
+        max-width: 100%;
+        height: auto;
     }
 }
 
@@ -319,7 +322,7 @@ header{
 }
 /* estilos do formulario de contato do rodapé */
 .form{
-    /* padding: 10px; */
+    text-align: center;
 }
 .form h3{
     color: #14d424;
